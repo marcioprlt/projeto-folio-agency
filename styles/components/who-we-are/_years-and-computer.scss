@@ -1,0 +1,45 @@
+.years-and-computer {
+    margin-top: 83px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .years {
+        flex-shrink: 0;
+        width: 90px;
+        max-height: 528px;
+        margin-top: 45px;
+        margin-bottom: 117px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        color: $color-text-dark-mode;
+
+        .y2020 {
+            position: relative;
+
+            .pagination {
+                position: absolute;
+                top: -366px;
+                //right: calc(62px + 24px);
+                left: -62px;
+                }
+             .point-line {
+                position: absolute;
+                top: 5px;
+                left: 65px;
+            }
+        }
+    }
+
+    .computer-image {
+        img {
+            width: 100%;
+        }
+    }
+}

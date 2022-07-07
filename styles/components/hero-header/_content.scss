@@ -1,0 +1,76 @@
+@import '../../abstract/variables';
+
+.hero-header .content {
+    position: relative;
+    width: 1195px;
+    height: 722px;
+    margin: 94px auto 0;
+
+    background: url('../images/round-bg.svg') bottom right;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 25px);
+
+    text-align: right;
+
+    .computer-image {
+        margin-top: 62px;
+        display: inline-block;
+    }
+}
+
+.content-text {
+    position: absolute;
+    margin-top: 16px;
+    width: 467px;
+    height: 548px;
+    text-align: left;
+
+    .stand-out {
+        height: 300px;
+        font-size: 84px;
+        font-weight: 700;
+        line-height: 100.24px;
+        color: $color-dark;
+    }
+
+    .agency {
+        width: 367px;
+        height: 96px;
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $color-text-light-mode;
+    }
+
+    button {
+        margin-top: 48px;
+        @include set-button($color-primary)
+    }
+}
+
+.button-scroll-down {
+    width: 158px;
+    height: 48px;
+    position: absolute;
+    bottom: 0%;
+
+    background: none;
+    border: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $color-text-dark-mode;
+
+    img {
+        width: 48px;
+        transform: rotate(-90deg);
+        background-color: $color-secondary;
+        border-radius: 50%;
+    }
+}

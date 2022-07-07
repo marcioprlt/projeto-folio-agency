@@ -1,0 +1,72 @@
+@import '../../abstract/variables';
+
+.logo-headline-and-button {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        flex-shrink: 0;
+        width: 90px;
+        
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .headline-and-button {
+        width: 970px;
+        min-height: 192px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .headline {
+            max-width: 670px;
+
+            display: flex;
+            flex-direction: column;
+
+            .tag-line {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+
+                display: flex;
+
+                div {
+                    &:nth-child(1) {
+                        margin-right: 24px;
+                        color: $color-primary;
+                    }
+                    &:nth-child(2) {color: $color-primary;}
+                }
+            }
+
+            .main-text {
+                margin-top: 24px;
+
+                font-size: 80px;
+                font-weight: 700;
+                line-height: 100px;
+                color: $color-dark;
+            }
+
+            .desc-text {
+                width: 520px;
+                margin-top: 40px;
+
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 30px;
+                color: $color-text-light-mode;
+            }
+        }
+
+        .button button {
+            margin-top: 49px;
+            margin-left: 32px;
+            @include set-button($color-primary, 166px);
+        }
+    }   
+}

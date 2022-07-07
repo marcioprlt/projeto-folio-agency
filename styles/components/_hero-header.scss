@@ -1,0 +1,11 @@
+@import './hero-header/navigation';
+@import './hero-header/content';
+
+.hero-header {
+    height: 1024px;
+    box-sizing: border-box;
+    padding-top: 64px;
+    background-image: url("../images/line-1.svg");
+    background-repeat: no-repeat;
+    background-position-x: 321px;
+}

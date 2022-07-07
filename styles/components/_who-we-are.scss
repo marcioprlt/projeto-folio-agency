@@ -1,0 +1,28 @@
+@import '../components/who-we-are/headline-and-arrows';
+@import '../components/who-we-are/years-and-computer.scss';
+@import '../components/who-we-are/design-team';
+
+.who-we-are {
+    //height: 1710px;
+    position: relative;
+
+    background: url('../images/round-bg-gradient.svg') top right;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+
+    .dark-bg {
+        width: 100%;
+        height: calc(100% - 40px);
+        position: absolute;
+        top: 40px;
+        z-index: -1;
+
+        background: $color-dark url('../images/line-2.svg') top left;
+        background-repeat: no-repeat;        
+    }
+
+    .container {
+        padding: 168px 9.1% 8.88%;
+    }
+}

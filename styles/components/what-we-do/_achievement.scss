@@ -1,0 +1,98 @@
+@import '../../abstract/variables';
+
+.what-we-do .achievement {
+    height: 786px;
+    margin-top: 185px;
+
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+
+    .phone-and-pagination {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        & > img{
+            margin-top: 28px;
+            width: 100%;
+        }
+
+        .pagination {
+            width: 96px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .content {
+        width: 50%;
+        height:494px;
+        margin-left: 9.3vw;
+        margin-top: 132px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .headline {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .logo-and-tag {
+                display: flex;
+
+                img {
+                    width: 24px
+                }
+
+                .tag-line {
+                    margin-left: 5.2vw;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        &:nth-child(1) {color: $color-text-dark-mode;}
+                        &:nth-child(2) {margin-left: 24px; color: $color-dark;}
+                    }
+                }
+            }
+
+            .main-text {
+                margin-top: 40px;
+
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                color: $color-text-dark;
+            }
+        }
+
+        .number {
+            p {
+                &:nth-child(1) {
+                    font-size: 200px;
+                    font-weight: 600;
+                    line-height: 238px;
+                    color: $color-primary;
+                }
+
+                &:nth-child(2) {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    color: $color-text-dark;
+                }
+            }
+        }
+    }
+}

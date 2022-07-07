@@ -1,0 +1,83 @@
+@import '../../abstract/variables';
+
+.logo-headline-and-arrows-2 {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        flex-shrink: 0;
+        width: 90px;
+        
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .headline-and-arrows {
+        width: 970px;
+        min-height: 192px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .headline {
+            max-width: 697px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .tag-line {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+
+                display: flex;
+
+                div {
+                    &:nth-child(1) {
+                        margin-right: 24px;
+                        color: $color-primary;
+                    }
+                    &:nth-child(2) {color: $color-primary;}
+                }
+            }
+
+            .main-text {
+                margin-top: 24px;
+
+                font-size: 64px;
+                font-weight: 700;
+                line-height: 72px;
+                color: $color-dark;
+            }
+        }
+
+        .arrows {
+            width: 144px;
+            height: 64px;
+            margin-top: 48px;
+            margin-left: 32px;
+
+            color: $color-dark;
+    
+            display: flex;
+            justify-content: space-between;
+            img {
+                width: 64px;
+                border-radius: 50%;
+    
+                &:nth-child(1) {
+                    transform: rotate(0deg);
+                }
+                &:nth-child(2) {
+                    transform: rotate(180deg);
+                }
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,54 @@
+@import '../../abstract/variables';
+
+.cards {
+    margin-top: 96px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 24px;
+
+    .card {
+        width: 293px;
+        height: 560px;
+
+        background-color: $color-white;
+        border-radius: 48px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: 1s;
+
+        div {
+            width: 180px;
+            height: 200px;
+
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            color: $color-primary;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 128px;
+            }
+        }
+
+        
+        &:hover {
+            transition: 1s;
+            background-color: $color-primary;
+        }
+
+        &:hover div {
+            transition: 1s;
+            color: $color-white;
+        }
+    }
+}

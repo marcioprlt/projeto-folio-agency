@@ -1,0 +1,23 @@
+$color-primary: #5468E7;
+$color-secondary: #C897E4;
+$color-dark: #232340;
+$color-white: #FFFFFF;
+
+$color-text-dark-mode: #8B8B8B;
+$color-text-light-mode: #606060;
+$color-text-deactivated: #ADADAD;
+$color-text-dark: #000000;
+
+$gradient-1: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+
+@mixin set-button($color, $width: 180px) {
+    width: $width;
+    height: 64px;
+    background-color: $color;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-white;
+}
