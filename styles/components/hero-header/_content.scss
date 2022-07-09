@@ -67,10 +67,11 @@
     line-height: 24px;
     color: $color-text-dark-mode;
 
-    img {
+    .arrow {
         width: 48px;
-        transform: rotate(-90deg);
-        background-color: $color-secondary;
+        height: 48px;
         border-radius: 50%;
+
+        background: $color-secondary url('../images/arrow-down.png');
     }
 }

@@ -6,7 +6,6 @@
 
     display: flex;
     justify-content: space-between;
-    //align-items: center;
 
     .phone-and-pagination {
         height: 100%;
@@ -77,21 +76,27 @@
             }
         }
 
-        .number {
-            p {
-                &:nth-child(1) {
-                    font-size: 200px;
-                    font-weight: 600;
-                    line-height: 238px;
-                    color: $color-primary;
+        .number-and-line {
+            .number {
+                font-size: 200px;
+                font-weight: 600;
+                line-height: 238px;
+                color: $color-primary;
+            }
+
+            .line {
+                display: flex;
+                align-items: baseline;
+
+                img {
+                    width: 24px;
+                    margin-right: 24px;
                 }
 
-                &:nth-child(2) {
-                    font-size: 24px;
-                    font-weight: 700;
-                    line-height: 32px;
-                    color: $color-text-dark;
-                }
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                color: $color-text-dark;
             }
         }
     }

@@ -3,14 +3,24 @@ $color-secondary: #C897E4;
 $color-dark: #232340;
 $color-white: #FFFFFF;
 
+$color-shade-1: #D1ECFD;
+$color-shade-2: #E8BEFF;
+$color-shade-5: #FFADD0;
+$color-shade-6: #FFCE79;
+$color-shade-7: #908CFF;
+
 $color-text-dark-mode: #8B8B8B;
 $color-text-light-mode: #606060;
 $color-text-deactivated: #ADADAD;
 $color-text-dark: #000000;
 
+$color-stroke-1: #D8D8D8;
+
 $gradient-1: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
 
-@mixin set-button($color, $width: 180px) {
+$slow-transition: .8s;
+
+@mixin set-button($color, $width: 180px, $text-color: $color-white) {
     width: $width;
     height: 64px;
     background-color: $color;
@@ -19,5 +29,5 @@ $gradient-1: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    color: $color-white;
+    color: $text-color;
 }

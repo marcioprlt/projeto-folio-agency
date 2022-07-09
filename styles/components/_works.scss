@@ -1,5 +1,35 @@
-@import './works/logo-headline-and-button';
+@import './works/works-logo-headline-and-button';
+@import './works/featured-work';
+@import './works/portfolio';
 
 .works {
-    padding: 53px 9.1% 8.88%;
+    height: 3232px;
+    padding: 53px 9.36% 0px;
+
+    position: relative;
+
+    .line-5 {
+        width: 464px;
+        height: 819px;
+        background: url('../images/line-5.svg') top left;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        top: 715px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .line-6 {
+        width: 874px;
+        height: 323px;
+        background: url('../images/line-6.png');
+        background-repeat: no-repeat;
+        opacity: .4;
+
+        position: absolute;
+        bottom: 1081px;
+        right: 0px;
+        z-index: -1;
+    }
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Folio Agency 1.0</title>
 </head>
 <body>
     <header class="hero-header">
@@ -36,7 +36,7 @@
             <img class="computer-image" src="./images/hero-img-header.png" alt="Computer image">
 
             <button class="button-scroll-down">
-                <img src="./images/arrow-left.png" alt="Arrow down">
+                <div class="arrow"></div>
                 <p>Scroll down</p>
             </button>
         </div>
@@ -45,7 +45,7 @@
     <section class="who-we-are">
         <div class="dark-bg"></div>
         <div class="container">
-            <div class="logo-headline-and-arrows">
+            <div class="who-we-are-logo-headline-and-arrows">
                 <div class="logo">
                     <img src="./images/logo-symbol.png">
                 </div>
@@ -58,8 +58,8 @@
                         <div class="main-text">We Make Designs that Lead and Inpire.</div>
                     </div>
                     <div class="arrows">
-                        <img src="./images/arrow-left.png" alt="Arrow to the left">
-                        <img src="./images/arrow-left.png" alt="Arrow to the right">
+                        <div class="arrow arrow-left"></div>
+                        <div class="arrow arrow-right"></div>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
         <div class="line-3"></div>
         <div class="line-4"></div>
         <div class="container">
-            <div class="logo-headline-and-arrows-2">
+            <div class="what-we-do-logo-headline-and-arrows">
                 <div class="logo">
                     <img src="./images/logo-symbol.png">
                 </div>
@@ -117,8 +117,8 @@
                         <div class="main-text">We Make Designs that Lead and Inpire.</div>
                     </div>
                     <div class="arrows">
-                        <img src="./images/arrow-left.png" alt="Arrow to the left">
-                        <img src="./images/arrow-left.png" alt="Arrow to the right">
+                        <div class="arrow arrow-left"></div>
+                        <div class="arrow arrow-right"></div>
                     </div>
                 </div>
             </div>
@@ -170,18 +170,22 @@
                             A design team building a curated marketplace for UI designers.
                         </div>
                     </div>
-                    <div class="number">
-                        <p>68</p>
-                        <p>😎    Successful Projects</p>
+                    <div class="number-and-line">
+                        <p class="number">68</p>
+                        <div class="line">
+                            <img src="./images/face-sunglasses.png">
+                            <p>Successful Projects</p>
+                        </div> 
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <div class="works">
-        <div class="logo-headline-and-button">
+    <section class="works">
+        <div class="line-5"></div>
+        <div class="line-6"></div>
+        <div class="works-logo-headline-and-button">
             <div class="logo">
                 <img src="./images/logo-symbol.png">
             </div>
@@ -201,7 +205,180 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="featured-work">
+            <div class="text-content">
+                <button>Featured Product</button>
+                <p class="main-text">Sapiens: The Free Character Builder App.</p>
+                <p class="desc-text">Beautiful library of modular, component-based character illustrations free to use for all your personal or client projects.</p>
+            </div>
+            <div class="image-content">
+                <img src="./images/featured-work.png">
+                <button class="button-view">view</button>
+                <button class="arrow"></button>
+            </div>
+        </div>
+        <div class="portfolio">
+            <div class="portfolio-card portfolio-card-1">
+                <p class="main-text">Bento Vol. 2</p>
+                <div class="image-and-arrow">
+                    <img class="portfolio-image" src="./images/portfolio-1.png">
+                    <div class="portfolio-arrow"></div>
+                </div>
+                <p class="desc-text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+            </div>
+            <div class="portfolio-card portfolio-card-2">
+                <p class="main-text">Bento 3D Illustration</p>
+                <div class="image-and-arrow">
+                    <img class="portfolio-image" src="./images/portfolio-2.png">
+                    <div class="portfolio-arrow"></div>
+                </div>
+                <p class="desc-text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+            </div>
+            <div class="portfolio-card portfolio-card-3">
+                <p class="main-text">Bento Vol. 3</p>
+                <div class="image-and-arrow">
+                    <img class="portfolio-image" src="./images/portfolio-3.png">
+                    <div class="portfolio-arrow"></div>
+                </div>
+                <p class="desc-text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+            </div>
+            <div class="portfolio-card portfolio-card-4">
+                <p class="main-text">Sapiens: Man</p>
+                <div class="image-and-arrow">
+                    <img class="portfolio-image" src="./images/portfolio-4.png">
+                    <div class="portfolio-arrow"></div>
+                </div>
+                <p class="desc-text">Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-container">
+            <img class="cta-phone" src="./images/cta-phone.png">
+            <img class="cta-logo" src="./images/logo-symbol-secondary.png">
+            <div class="cta-content">
+                <div class="tag-line">
+                    <div>05.</div>
+                    <div>Call to action</div>
+                </div>
+                <div class="main-text">We Are Looking for Talented Designers</div>
+                <button>Apply Now</button>
+            </div>
+        </div>
+    </section>  
     
+    <section class="jobs">
+        <div class="jobs-logo-headline-and-button">
+            <div class="logo">
+                <img src="./images/logo-symbol.png">
+            </div>
+            <div class="headline-and-button">
+                <div class="tag-line">
+                    <div>05.</div>
+                    <div>We are hiring</div>
+                </div>
+                <div class="main-text">Jobs</div>
+                <div class="desc-text">
+                    Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.
+                </div>
+                <button class="button-available-jobs">
+                    <div class="arrow"></div>
+                    <div class="button-text">Available jobs</div>
+                </button>
+            </div>
+        </div>
+        <ul class="job-cards">
+            <li class="job-card job-card-1">
+                <div class="job-card-content">
+                    <div class="job-card-title">
+                        Graphic Designer
+                        <div class="notification">2</div>
+                    </div>
+                    <p class="job-card-desc">2 years experience</p>
+                    <div class="small-arrow"></div>
+                </div>
+            </li>
+            <li class="job-card">
+                <div class="job-card-content">
+                    <div class="job-card-title">
+                        Visual Designer
+                    </div>
+                    <p class="job-card-desc">2 years experience</p>
+                    <div class="small-arrow"></div>
+                </div>
+                <div class="job-card-image">
+                    <img src="./images/visual-designer.png">
+                </div>
+            </li>
+            <li class="job-card">
+                <div class="job-card-content">
+                    <div class="job-card-title">
+                        Art Director
+                    </div>
+                    <p class="job-card-desc">2 years experience</p>
+                    <div class="small-arrow"></div>
+                </div>
+            </li>
+            <li class="job-card job-card-4">
+                <div class="job-card-content">
+                    <div class="job-card-title">
+                        Web Designer
+                        <div class="notification">6</div>
+                    </div>
+                    <p class="job-card-desc">2 years experience</p>
+                    <div class="small-arrow"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="cta-footer">
+        <div class="cta-footer-contact">
+            <div class="cta-footer-headline">
+                <img class="logo" src="./images/logo-symbol-secondary.png">
+                <div class="tag-line">
+                    <img src="./images/waving-hand.png">
+                    <p>Say hello</p>
+                </div>
+                <p class="main-text">A design team building a curated marketplace for UI designers.</p>
+            </div>
+            <div class="cta-footer-other-groups">
+                <div class="lets-talk">
+                    <p>Let’s talk about your next project</p>
+                </div>
+                <div class="invest-in">
+                    <div class="invest-in-container">
+                        <img class="speech-bubble" src="./images/speech-bubble.png">
+                        <div class="text-and-arrow">
+                            <p>Invest in your designs today!</p>
+                            <img src="./images/arrow-right-ouline-white.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="cta-footer-content">
+                <img src="./images/logo-dark.png">
+                <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+                <ul>
+                    <li class="text-primary">About</li>
+                    <li>Work</li>
+                    <li>Services</li>
+                    <li>Jobs</li>
+                </ul>
+            </div>
+            <div class="cta-footer-bottom">
+                <p class="copyright">© 2020, UI8 LLC.</p>
+                <div class="social-media">
+                    <p class="text-primary">Follow us</p>
+                    <img src="./images/logo-facebook.png">
+                    <img src="./images/logo-youtube.png">
+                    <img src="./images/logo-instagram.png">
+                </div>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>

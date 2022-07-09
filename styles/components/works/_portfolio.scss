@@ -1,0 +1,127 @@
+.works .portfolio {
+    margin-top: 144px;
+
+    position: relative;
+
+    .portfolio-card {
+        display: flex;
+        flex-direction: column;
+
+        .main-text {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            color: $color-dark;
+        }
+
+        .image-and-arrow {
+            margin-top: 40px;
+            border-radius: 24px;
+
+            position: relative;
+
+            .portfolio-arrow {
+                position: absolute;
+
+                bottom: 63px;
+                right: -33px;
+
+                width: 66px;
+                height: 66px;
+
+                background: url('../images/arrow-right-outline.png');
+            }
+        }
+
+        .desc-text {
+            margin-top: 40px;
+            width: 366px;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-text-light-mode;
+        }
+    }
+
+    .portfolio-card-1 {
+        position: absolute;
+        right: 0px;
+
+        width: 366px;
+
+        .image-and-arrow {
+            height: 380px;
+            background-color: $color-shade-2;
+
+            .portfolio-image {
+                position: absolute;
+
+                bottom: -86px;
+                right: -43px;
+            }
+        }
+    }
+
+    .portfolio-card-2 {
+        position: absolute;
+        top: 439px - 144px;
+        left: 0px;
+
+        width: 470px;
+
+        .image-and-arrow {
+            height: 500px;
+            background-color: $color-shade-6;
+
+            .portfolio-image {
+                position: absolute;
+
+                bottom: 24px;
+                right: -81px;
+            }
+        }
+    }
+
+    .portfolio-card-3 {
+        position: absolute;
+        top: 1163px - 144px;
+        right: 100px;
+
+        width: 467px;
+
+        .image-and-arrow {
+            height: 506px;
+            background-color: $color-shade-1;
+
+            .portfolio-image {
+                height: 485px;
+
+                position: absolute;
+
+                bottom: -14px;
+                right: -109px;
+            }
+        }
+    }
+
+    .portfolio-card-4 {
+        position: absolute;
+        top: 1528px - 144px;
+        left: 100px;
+
+        width: 366px;
+
+        .image-and-arrow {
+            height: 506px;
+            background-color: $color-shade-5;
+
+            .portfolio-image {
+                position: absolute;
+
+                bottom: 66px;
+                right: 0px;
+            }
+        }
+    }
+}

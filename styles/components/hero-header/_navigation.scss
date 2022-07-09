@@ -1,7 +1,8 @@
 @import '../../abstract/variables';
 
 .navbar {
-    margin: 0 72px;
+    padding: 0 72px;
+    background-color: $color-white;
 
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,102 @@
+@import '../../abstract/variables';
+
+.cta-footer-contact {
+    margin: 0px 5%;
+
+    border-radius: 40px;
+    background: $color-primary url('../images/line-8.png');
+    background-repeat: no-repeat;
+    background-position-x: 119px;
+
+    display: flex;
+    flex-direction: column;
+
+    .cta-footer-headline {
+        margin: 128px auto 176px;
+        width: 568px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+            width: 24px;
+        }
+
+        .tag-line {
+            margin-top: 40px;
+
+            display: flex;
+
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            color: $color-white;
+
+            img {
+                margin-right: 12px;
+            }
+        }
+
+        .main-text {
+            margin-top: 40px;
+
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 40px;
+            color: $color-white;
+
+            text-align: center;
+        }
+    }
+
+    .cta-footer-other-groups {
+        display: flex;
+
+        .lets-talk {
+            flex-basis: 50%;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+            p {
+                margin: 120px 118px 175px 163px;
+
+                font-size: 58px;
+                font-weight: 700;
+                line-height: 72px;
+                color: $color-white;
+            }
+        }
+
+        .invest-in {
+            flex-basis: 50%;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+            .invest-in-container {
+                margin: 120px 65px 179px 117px;
+
+                .speech-bubble {
+                    width: 103px;
+                }
+    
+                .text-and-arrow {
+                    margin-top: 29px;
+
+                    display: flex;
+                    align-items: flex-start;
+
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    color: $color-white;
+
+                    img {
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+    }
+}

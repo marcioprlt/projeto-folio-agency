@@ -1,6 +1,6 @@
 @import '../../abstract/variables';
 
-.logo-headline-and-arrows-2 {
+.who-we-are .who-we-are-logo-headline-and-arrows {
     display: flex;
     justify-content: space-between;
 
@@ -38,9 +38,9 @@
                 div {
                     &:nth-child(1) {
                         margin-right: 24px;
-                        color: $color-primary;
+                        color: $color-text-dark-mode;
                     }
-                    &:nth-child(2) {color: $color-primary;}
+                    &:nth-child(2) {color: $color-white}
                 }
             }
 
@@ -50,7 +50,7 @@
                 font-size: 64px;
                 font-weight: 700;
                 line-height: 72px;
-                color: $color-dark;
+                color: $color-white;
             }
         }
 
@@ -59,24 +59,24 @@
             height: 64px;
             margin-top: 48px;
             margin-left: 32px;
-
-            color: $color-dark;
     
             display: flex;
             justify-content: space-between;
-            img {
+
+            .arrow {
                 width: 64px;
+                height: 64px;
                 border-radius: 50%;
-    
-                &:nth-child(1) {
-                    transform: rotate(0deg);
-                }
-                &:nth-child(2) {
-                    transform: rotate(180deg);
-                }
+
+                background-image: url('../images/arrow-right-white.png');
+
                 &:hover {
                     background-color: $color-primary;
                 }
+            }
+
+            .arrow-left {
+                transform: rotate(180deg);
             }
         }
     }   

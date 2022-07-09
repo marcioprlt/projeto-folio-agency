@@ -1,6 +1,6 @@
 @import '../../abstract/variables';
 
-.logo-headline-and-arrows {
+.what-we-do .what-we-do-logo-headline-and-arrows {
     display: flex;
     justify-content: space-between;
 
@@ -38,9 +38,9 @@
                 div {
                     &:nth-child(1) {
                         margin-right: 24px;
-                        color: $color-text-dark-mode;
+                        color: $color-primary;
                     }
-                    &:nth-child(2) {color: $color-white}
+                    &:nth-child(2) {color: $color-primary;}
                 }
             }
 
@@ -50,7 +50,7 @@
                 font-size: 64px;
                 font-weight: 700;
                 line-height: 72px;
-                color: $color-white;
+                color: $color-dark;
             }
         }
 
@@ -62,19 +62,22 @@
     
             display: flex;
             justify-content: space-between;
-            img {
+
+            .arrow {
                 width: 64px;
+                height: 64px;
                 border-radius: 50%;
-    
-                &:nth-child(1) {
-                    //transform: rotate(90deg);
-                }
-                &:nth-child(2) {
-                    transform: rotate(180deg);
-                }
+
+                background-image: url('../images/arrow-right.png');
+
                 &:hover {
                     background-color: $color-primary;
+                    background-image: url('../images/arrow-right-white.png');
                 }
+            }
+
+            .arrow-left {
+                transform: rotate(180deg);
             }
         }
     }   

@@ -1,4 +1,4 @@
-@import './what-we-do/headline-and-arrows-2';
+@import './what-we-do/what-we-do-logo-headline-and-arrows';
 @import './what-we-do/services';
 @import './what-we-do/achievement';
 
@@ -20,7 +20,9 @@
     }
 
     .line-4 {
-        width: 44.5%;
+        display: none;
+
+        width: 518px;
         height: 819px;
         background: url('../images/line-4.svg');
         background-repeat: no-repeat;
@@ -28,7 +30,7 @@
 
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 402px;
         z-index: -1;
     }
 

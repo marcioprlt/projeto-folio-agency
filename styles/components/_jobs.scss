@@ -1,0 +1,13 @@
+@import './jobs/jobs-logo-headline-and-button';
+@import './jobs/job-cards';
+
+.jobs {
+    margin-top: 30px;
+    padding: 128px 9.3%;
+
+    background: url('../images/line-7.png') top left;
+    background-repeat: no-repeat;
+    background-position-x: 328px;
+
+    display: flex;
+}

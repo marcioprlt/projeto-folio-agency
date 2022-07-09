@@ -1,0 +1,79 @@
+@import '../../abstract/variables';
+
+.works .featured-work {
+    margin-top: 181px;
+    height: 540px;
+
+    position: relative;
+
+    .text-content {
+        button {
+            margin-top: 46px;
+
+            width: 166px;
+            height: 40px;
+            background-color: $color-shade-7;
+            border: none;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            color: $color-white;
+        }
+
+        .main-text {
+            margin-top: 24px;
+            width: 467px;
+
+            font-size: 36.4px;
+            font-weight: 700;
+            line-height: 48px;
+            color: $color-text-dark;
+        }
+
+        .desc-text {
+            margin-top: 32px;
+            width: 234px;
+
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-text-light-mode;
+        }
+    }
+
+    .image-content {
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 301px;
+
+        .button-view {
+            position: absolute;
+            left: 32px;
+            bottom: 52px;
+
+            width: 64px;
+            height: 64px;
+            background-color: $color-dark;
+            border: none;
+            border-radius: 50%;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            color: $color-white;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 142px;
+            right: -32px;
+
+            width: 64px;
+            height: 64px;
+            background: $color-primary url('../images/arrow-right-white.png');
+            border: none;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import '../../abstract/variables';
+
+.cta-footer {
+    .cta-footer-content {
+        margin: 128px auto 0px;
+        width: 565px;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 191px;
+        }
+
+        p {
+            margin-top: 48px;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-text-light-mode;
+        }
+
+        ul {
+            margin-top: 48px;
+            width: 392px;
+
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 32px;
+            color: $color-text-dark-mode;
+        }
+    }
+
+    .cta-footer-bottom {
+        margin: 48px 9.4% 32px;
+
+        height: 51px;
+
+        border-top: 1px solid $color-stroke-1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .copyright {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            color: $color-text-deactivated;
+        }
+
+        .social-media {
+            width: 233px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+        }
+    }
+}
