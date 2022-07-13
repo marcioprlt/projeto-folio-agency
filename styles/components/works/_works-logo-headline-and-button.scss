@@ -70,3 +70,50 @@
         }
     }   
 }
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .works-logo-headline-and-button{
+        .headline-and-button {
+            width: 100%;
+
+            .headline {
+                .main-text {
+                    font-size: 6.25vw;
+                    line-height: 7.03vw;
+                }
+                .desc-text {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .works-logo-headline-and-button {
+        .logo {
+            display: none;
+        }
+
+        .headline-and-button {
+            .headline {
+                .main-text {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+
+                .desc-text {
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+
+            .button button {
+                display: none;
+            }
+        }
+    }
+}

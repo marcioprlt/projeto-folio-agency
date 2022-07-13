@@ -9,6 +9,8 @@ $color-shade-5: #FFADD0;
 $color-shade-6: #FFCE79;
 $color-shade-7: #908CFF;
 
+$color-accent-2: #FFBA79;
+
 $color-text-dark-mode: #8B8B8B;
 $color-text-light-mode: #606060;
 $color-text-deactivated: #ADADAD;
@@ -30,4 +32,20 @@ $slow-transition: .8s;
     font-size: 18px;
     line-height: 24px;
     color: $text-color;
+}
+
+//media variables
+$mobile-max-width: 100% - 8.53% * 2;
+$mobile-max-vw: 82.94vw;
+
+@media (max-width: 1440px) and (min-width: 769px) {
+    $margin: 9.37%;
+}
+
+@media (min-width: 1441px) {
+    $margin: 135px;
+}
+
+@media (max-width: 768px) {
+        $margin: 8.53%;
 }

@@ -3,11 +3,32 @@
 
 .jobs {
     margin-top: 30px;
-    padding: 128px 9.3%;
 
     background: url('../images/line-7.png') top left;
     background-repeat: no-repeat;
     background-position-x: 328px;
 
-    display: flex;
+    .container {
+        display: flex;
+
+        max-width: 1170px;
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .jobs .container {
+        padding-top: 8.59vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .jobs .container {
+        flex-direction: column;
+        padding-top: 16px;
+        padding-bottom: 64px;
+    }
 }

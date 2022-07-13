@@ -38,8 +38,70 @@
     }
 
     .computer-image {
+        width: 970px;
+        height: 688px;
+
+        background-image: url('../images/who-we-are.png');
+        background-repeat: no-repeat;
+
         img {
             width: 100%;
         }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .years-and-computer {
+        .years {
+            margin-top: 3.13vw;
+            margin-bottom: 8.13vw;
+
+            .y2020 {
+                .point-line {
+                    width: 20vw;
+                }
+            }
+        }
+
+        .wrapper {
+            width: 67.38vw;
+            height: 41.41vw;
+
+            .computer-image {
+                width: 100%;
+                height: 100%;
+
+                background-size: contain;
+                background-position: right;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .years-and-computer {
+        margin-top: 56px;
+
+        .years {
+            display: none;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 113.07vw;
+            position: relative;
+
+            .computer-image {
+                width: 100vw;
+                height: 100%;
+
+                position: absolute;
+                left: -8.53vw;
+    
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
     }
 }

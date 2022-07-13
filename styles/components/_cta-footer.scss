@@ -1,2 +1,16 @@
 @import './cta-footer/cta-footer-contact';
 @import './cta-footer/cta-footer-footer';
+
+.cta-footer {
+    .bigger-container {
+        max-width: 1296px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bigger-container {
+        padding-left: 8.53%;
+        padding-right: 8.53%;
+        margin: 0 auto;
+    }
+}

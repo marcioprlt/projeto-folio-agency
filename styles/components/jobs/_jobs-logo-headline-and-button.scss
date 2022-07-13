@@ -87,3 +87,41 @@
         }
     }   
 }
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .jobs-logo-headline-and-button {
+        .headline-and-button {
+            width: 100%;
+            .desc-text {
+                width: auto;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .jobs-logo-headline-and-button {
+        .logo {
+            display: none;
+        }
+
+        .headline-and-button {
+            width: 100%;
+
+            .main-text {
+                font-size: 40px;
+                line-height: 48px;
+            }
+
+            .desc-text {
+                width: auto;
+            }
+
+            .button-available-jobs {
+                display: none;
+            }
+        }
+    }
+}

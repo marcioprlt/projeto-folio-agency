@@ -3,8 +3,8 @@
 @import './works/portfolio';
 
 .works {
-    height: 3232px;
-    padding: 53px 9.36% 0px;
+    //height: 3232px + 53px;
+    height: auto;
 
     position: relative;
 
@@ -31,5 +31,11 @@
         bottom: 1081px;
         right: 0px;
         z-index: -1;
+    }
+
+    .container {
+        max-width: 1170px;
+        padding-top: 53px;
+        padding-bottom: 0px;
     }
 }

@@ -8,6 +8,8 @@
     background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
     background-repeat: no-repeat;
 
+    height: auto;
+
     .line-3 {
         width: 44.5%;
         height: 819px;
@@ -35,6 +37,16 @@
     }
 
     .container {
-        padding: 152px 9.1% 8.88%;
+        max-width: 1170px;
+        padding-top: 152px;
+        padding-bottom: 8.88%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .what-we-do {
+        .container {
+            padding-top: 113px;
+        }
     }
 }

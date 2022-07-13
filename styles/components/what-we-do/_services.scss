@@ -52,3 +52,57 @@
         }
     }
 }
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .cards {
+        margin-top: 64px;
+        width: auto;
+        .card {
+            div {
+                width: auto;
+
+                font-size: 1.76vw;
+            }
+
+            height: 38.87vw;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cards {
+        margin-top: 56px;
+
+        flex-direction: column;
+
+        .card {
+            justify-content: flex-start;
+
+            width: 100%;
+            height: $mobile-max-vw * 0.61;
+
+            div {
+                margin-left: 7vw;
+
+                width: 51.47vw;
+                height: 25.34vw;
+
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+
+                flex-direction: row;
+
+                img {
+                    width: 25.33vw;
+                }
+
+                p {
+                    margin-left: 6.67vw;
+                }
+            }
+        }
+    }
+}

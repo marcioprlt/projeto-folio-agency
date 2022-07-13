@@ -1,8 +1,6 @@
 @import '../../abstract/variables';
 
 .cta-footer-contact {
-    margin: 0px 5%;
-
     border-radius: 40px;
     background: $color-primary url('../images/line-8.png');
     background-repeat: no-repeat;
@@ -19,8 +17,11 @@
         flex-direction: column;
         align-items: center;
 
-        .logo {
+        .logo-or-bubble {
+            background-image: url('../images/logo-symbol-secondary.png');
+            background-size: cover;
             width: 24px;
+            height: 24px;
         }
 
         .tag-line {
@@ -67,6 +68,10 @@
                 line-height: 72px;
                 color: $color-white;
             }
+
+            .lets-talk-button {
+                display: none;
+            }
         }
 
         .invest-in {
@@ -93,8 +98,79 @@
                     color: $color-white;
 
                     img {
+                        margin-left: 32px;
                         flex-shrink: 0;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .cta-footer-contact {
+        .cta-footer-other-groups {
+            .lets-talk {
+                p {
+                    margin: 8.4vw 7.52vw 10.74vw 12.02vw;
+
+                    font-size: 4.69vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cta-footer-contact {
+        .cta-footer-headline {
+            margin-top: 49px;
+            margin-bottom: 40px;
+            width: auto;
+            padding: 0 10.13vw;;
+
+            .logo-or-bubble {
+                background-image: url('../images/speech-bubble.png');
+                width: 19.47vw;
+                height: 19.47vw;
+            }
+
+            .tag-line {
+                margin-top: 6px;
+            }
+
+            .main-text {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .cta-footer-other-groups {
+
+            .invest-in {
+                display: none;
+            }
+
+            .lets-talk {
+                flex-grow: 1;
+                text-align: center;
+
+                padding-bottom: 32px;
+
+                p {
+                    margin: 10.67vw 6.67vw;
+
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                .lets-talk-button {
+                    margin-left: 24px;
+                    display: block;
+                    @include set-button($color-white, 100%, $color-primary);
+                    width: calc(100% - 48px);
                 }
             }
         }

@@ -1,14 +1,13 @@
 @import '../../abstract/variables';
 
 .what-we-do .achievement {
-    height: 786px;
     margin-top: 185px;
 
     display: flex;
     justify-content: space-between;
 
     .phone-and-pagination {
-        height: 100%;
+        height: 758px;
 
         display: flex;
         flex-direction: column;
@@ -17,7 +16,7 @@
 
         & > img{
             margin-top: 28px;
-            width: 100%;
+            max-width: 100%;
         }
 
         .pagination {
@@ -46,7 +45,7 @@
             .logo-and-tag {
                 display: flex;
 
-                img {
+                .logo {
                     width: 24px
                 }
 
@@ -97,6 +96,82 @@
                 font-weight: 700;
                 line-height: 32px;
                 color: $color-text-dark;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .what-we-do .achievement {
+        margin-top: 98px;
+
+        .phone-and-pagination {
+            height: 52.64vw;
+
+            & > img {
+                //max-width: 467px;
+            }
+        }
+
+        .content {
+            margin-top: 9.17vw;
+            height: auto;
+            justify-content: flex-start;
+
+            .number-and-line {
+                .number {
+                    margin-top: 7.81vw;
+
+                    font-size: 140px;
+                    line-height: 167px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .what-we-do .achievement {
+        margin-top: 56px;
+        flex-direction: column-reverse;
+
+        .phone-and-pagination {
+            margin-top: 36px;
+            height: auto;
+
+
+            .pagination {
+                margin-top: 32px;
+
+                & > img {
+                    max-width: 467px;
+                    width: auto;
+                }
+            }
+        }
+
+        .content {
+            margin-left: 0;
+            margin-top: 0;
+            width: auto;
+
+            .headline .logo-and-tag {
+                .logo {
+                    display: none;
+                }
+    
+                .tag-line {
+                    margin-left: 0;
+                }
+            }
+
+            .number-and-line {
+                .number {
+                    font-size: 37.33vw;
+                    line-height: 1;
+                }
             }
         }
     }

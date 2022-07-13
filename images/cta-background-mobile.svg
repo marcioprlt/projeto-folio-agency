@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="375"
+   height="977"
+   viewBox="0 0 375 977"
+   fill="none"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="cta-background-mobile.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     id="namedview8"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="true"
+     inkscape:zoom="0.68577277"
+     inkscape:cx="171.5"
+     inkscape:cy="605.15672"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <rect
+     x="32.088867"
+     width="311"
+     height="929"
+     rx="28.444401"
+     fill="#5468e7"
+     id="rect2"
+     y="0" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 276.501,275.067 c 2.321,-10.084 3.481,-15.126 6.22,-18.887 2.417,-3.318 5.686,-5.92 9.461,-7.531 4.279,-1.827 9.453,-1.827 19.801,-1.827 H 375 V 977 H 160.737 c -15.625,0 -23.438,0 -28.8328,-3.227 -4.7299,-2.83 -8.2721,-7.279 -9.9689,-12.523 -1.9353,-5.981 -0.1835,-13.595 3.32,-28.823 z"
+     fill="#ffc7df"
+     id="path4" />
+</svg>

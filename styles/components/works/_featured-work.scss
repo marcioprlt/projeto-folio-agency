@@ -7,7 +7,7 @@
     position: relative;
 
     .text-content {
-        button {
+        .featured-product-button {
             margin-top: 46px;
 
             width: 166px;
@@ -40,6 +40,10 @@
             line-height: 32px;
             color: $color-text-light-mode;
         }
+
+        .featured-product-arrow {
+            display: none;
+        }
     }
 
     .image-content {
@@ -47,6 +51,18 @@
         z-index: -1;
         top: 0px;
         left: 301px;
+
+        width: 668px;
+        height: 520px;
+
+        border-radius: 24px;
+        background-color: $color-shade-1;
+
+        img {
+            position: absolute;
+            top: 19px;
+            left: 53px;
+        }
 
         .button-view {
             position: absolute;
@@ -75,5 +91,119 @@
             border: none;
             border-radius: 50%;
         }
+
+        .featured-product-button {
+            display: none;
+        }
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .works .featured-work {
+        height: auto;
+
+        .text-content {
+            .featured-product-button {
+                margin-top: 3.19vw;
+            }
+
+            .main-text {
+                width: 375px;
+                font-size: 32px;
+            }
+        }
+        .image-content {
+            left: auto;
+            right: 0;
+
+            width: 48.9vw;
+            height: 36.13vw;
+
+            img {
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .button-view {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .works .featured-work {
+        margin-top: 56px;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .text-content {
+            .featured-product-button {
+                display: none;
+            }
+
+            .main-text {
+                width: 100%;
+
+                font-size: 24px;
+                line-height: 32px;
+            }
+            
+            .featured-product-arrow {
+                margin-top: 24px;
+
+                display: block;
+
+                width: 48px;
+                height: 48px;
+
+                background: url('../images/arrow-right-outline.png');
+                background-size: contain;
+            }
+        }
+
+        .image-content {
+            position: relative;
+            left: 0px;
+
+            width: 100%;
+            height: calc(83.48vw + 21px + 21px);
+
+            background-color: $color-accent-2;
+
+            img {
+                width: 100%;
+
+                top: 21px;
+                left: 0px;
+            }
+
+            .button-view, .arrow {
+                display: none;
+            }
+
+            .featured-product-button {
+                display: block;
+
+                position: absolute;
+                left: 24px;
+                bottom: 24px;
+    
+                width: 31.73vw;
+                height: 7.73vw;
+                background-color: $color-shade-7;
+                border: none;
+                border-radius: calc(7.73vw / 2);
+                font-size: 2.67vw;
+                font-weight: 600;
+                line-height: 13px;
+                color: $color-white;
+            }
+        }
+
     }
 }

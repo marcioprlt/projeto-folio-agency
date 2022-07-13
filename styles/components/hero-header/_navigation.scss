@@ -1,14 +1,14 @@
 @import '../../abstract/variables';
 
 .navbar {
-    padding: 0 72px;
+    padding: 0 5%;
     background-color: $color-white;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    img {
+    .logo-main {
         width: 159px;
         height: 40px;
     }
@@ -23,25 +23,27 @@
         justify-content: space-between;
         align-items: center;
 
-        position: relative;
         li {
             font-weight: 600;
-        }
-        .notification {
-            width: 24px;
-            height: 24px;
-            border-radius: 12px;
-            background: $gradient-1;
 
-            position: absolute;
-            left: calc(100% + 8px);
-            top: -12px;
+            position: relative;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            font-weight: 600;
+            .notification {
+                width: 24px;
+                height: 24px;
+                border-radius: 12px;
+                background: $gradient-1;
+    
+                position: absolute;
+                left: calc(100% + 8px);
+                top: -12px;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                font-weight: 600;
+            }
         }
     }
 
@@ -49,4 +51,43 @@
         @include set-button($color-dark)
     }
 
+    .burger-icon {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 1441px) {
+    .navbar {
+        max-width: 1296px;
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .navbar {
+        ul {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        ul {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+
+        .burger-icon {
+            display: block;
+        }
+    }
 }

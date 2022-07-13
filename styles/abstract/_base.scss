@@ -82,3 +82,55 @@ button {
 .text-white {
     color: $color-white;
 }
+
+//media query containers
+@media (min-width: 1441px) {
+    .container {
+        padding-left: 135px;
+        padding-right: 135px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 769px) {
+    .container {
+        padding-left: 9.37%;
+        padding-right: 9.37%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 8.53%;
+        padding-right: 8.53%;
+        margin: 0 auto;
+    }
+
+    .div-line {
+        display: none;
+    }
+}
+
+@media (min-width: 1441px) {
+    .bigger-container {
+        padding-left: 72px;
+        padding-right: 72px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 769px) {
+    .bigger-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0 auto;
+    }
+}
+
+
+
+.container, .bigger-container {
+    //background-color: pink;
+    //z-index: -10;
+}

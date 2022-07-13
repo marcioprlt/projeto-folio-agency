@@ -69,6 +69,7 @@
                 border-radius: 50%;
 
                 background-image: url('../images/arrow-right.png');
+                background-size: contain;
 
                 &:hover {
                     background-color: $color-primary;
@@ -81,4 +82,51 @@
             }
         }
     }   
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .what-we-do .what-we-do-logo-headline-and-arrows {
+        .headline-and-arrows {
+            .headline {
+                .main-text {
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .what-we-do .what-we-do-logo-headline-and-arrows {
+        .logo {
+            display: none;
+        }
+
+        .headline-and-arrows {
+            flex-direction: column;
+
+            .headline {
+                .main-text {
+                    font-size: 41px;
+                    font-weight: 700;
+                    line-height: 48px;
+                }
+            }
+
+            .arrows {
+                margin-top: 32px;
+                margin-left: 0px;
+
+                width: 112px;
+                height: 48px;
+
+                .arrow {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+    }
 }

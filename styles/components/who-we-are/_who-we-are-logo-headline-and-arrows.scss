@@ -54,30 +54,103 @@
             }
         }
 
-        .arrows {
-            width: 144px;
-            height: 64px;
+        .arrows-and-year {
             margin-top: 48px;
             margin-left: 32px;
-    
+
             display: flex;
             justify-content: space-between;
 
-            .arrow {
-                width: 64px;
+            .arrows {
+                width: 144px;
                 height: 64px;
-                border-radius: 50%;
-
-                background-image: url('../images/arrow-right-white.png');
-
-                &:hover {
-                    background-color: $color-primary;
+        
+                display: flex;
+                justify-content: space-between;
+    
+                .arrow {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+    
+                    background-image: url('../images/arrow-right-white.png');
+                    background-size: contain;
+    
+                    &:hover {
+                        background-color: $color-primary;
+                    }
+                }
+    
+                .arrow-left {
+                    transform: rotate(180deg);
                 }
             }
 
-            .arrow-left {
-                transform: rotate(180deg);
+            .year {
+                width: 144px;
+                display: none;
+                justify-content: space-around;
+                align-items: center;
+
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 16px;
+                color: $color-white;
+            }
+        }
+
+    }   
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .who-we-are .who-we-are-logo-headline-and-arrows {
+        .headline-and-arrows {
+            .headline {
+                .main-text {
+                    font-size: 48px;
+                }
             }
         }
     }   
+}
+
+
+@media (max-width: 768px) {
+    .who-we-are .who-we-are-logo-headline-and-arrows {
+        .logo {
+            display: none;
+        }
+
+        .headline-and-arrows {
+            flex-direction: column;
+
+            .headline {
+                .main-text {
+                    font-size: 41px;
+                    font-weight: 700;
+                    line-height: 48px;
+                }
+            }
+
+            .arrows-and-year {
+                margin-top: 32px;
+                margin-left: 0px;
+
+                .arrows {
+                    width: 112px;
+                    height: 48px;
+
+                    .arrow {
+                       width: 48px;
+                       height: 48px;
+                   }
+                }
+
+                .year {
+                    display: flex;
+                }
+            }
+        }
+    }
 }

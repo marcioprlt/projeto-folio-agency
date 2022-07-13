@@ -23,6 +23,14 @@
     }
 
     .container {
-        padding: 168px 9.1% 8.88%;
+        max-width: 1170px;
+        padding-top: 168px;
+        padding-bottom: 8.88%;
+    }
+}
+
+@media (max-width: 768px) {
+    .who-we-are {
+        background-image: none;
     }
 }
